@@ -7,16 +7,9 @@ import { LayoutModule } from './layout/layout.module';
 import { TituloComponent } from './titulo/titulo.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TituloComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    LayoutModule
-  ],
+  declarations: [AppComponent, TituloComponent],
+  imports: [BrowserModule, AppRoutingModule, LayoutModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
