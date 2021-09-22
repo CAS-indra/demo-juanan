@@ -15,6 +15,7 @@ const routes: Routes = [
     path: 'not-found',
     loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule),
   },
+  { path: 'proyect-editor', loadChildren: () => import('./proyect-editor/proyect-editor.module').then(m => m.ProyectEditorModule) },
   {
     path: '**',
     redirectTo: 'not-found',
