@@ -11,7 +11,14 @@ const routes: Routes = [
     path: 'contacto',
     loadChildren: () => import('./contacto/contacto.module').then(m => m.ContactoModule),
   },
-  { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule) },
+  {
+    path: 'not-found',
+    loadChildren: () => import('./not-found/not-found.module').then(m => m.NotFoundModule),
+  },
+  {
+    path: '**',
+    redirectTo: 'not-found',
+  },
 ];
 
 @NgModule({
